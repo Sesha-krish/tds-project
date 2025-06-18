@@ -2,7 +2,11 @@ import json
 import openai
 from sentence_transformers import SentenceTransformer, util
 
-openai.api_key = "YOUR_OPENAI_API_KEY"
+import os
+from openai import OpenAI
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
 embedder = SentenceTransformer('all-MiniLM-L6-v2')
 
 with open("embeddings/embed_store.json", "r") as f:
