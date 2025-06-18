@@ -1,0 +1,6 @@
+flask
+openai
+sentence-transformers
+torch
+requests
+beautifulsoup4
