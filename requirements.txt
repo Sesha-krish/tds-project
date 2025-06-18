@@ -1,3 +1,4 @@
+uvicorn
 flask
 openai
 sentence-transformers
