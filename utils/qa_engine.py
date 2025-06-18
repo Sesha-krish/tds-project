@@ -7,7 +7,8 @@ from openai import OpenAI
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-embedder = SentenceTransformer('all-MiniLM-L6-v2')
+embedder= SentenceTransformer("paraphrase-MiniLM-L3-v2")  # MUCH lighter
+
 
 with open("embeddings/embed_store.json", "r") as f:
     knowledge_base = json.load(f)
